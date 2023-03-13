@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<style>
+	fieldset {
+		width: 50%;
+	}
+	p {
+		display: inline-block;
+		width: 100px;
+	}
+	.gender {
+		width: 170px;
+		height: 25px;
+		margin: 0 0 0 -4px;
+	}
+	
+	.text {
+		display: inline;
+	}
+	.block-2 {
+		margin: 40px 0;
+	}
+	.checkbox{
+		margin: 10px 20px;
+	}
+	button {
+		width: 300px;
+		height: 40px;
+	}
+</style>
+
+<body>
+
+	<h1>Форма заявки на работу в зоопарке</h1>
+	<h4><em>Пожалуйста заполните форму. Обязательные поля помнчены<span style="color:red";>*</span></em></h4>
+
+	<form>
+		<fieldset class="block_1">
+			<legend style="font-weight: 600;">КОНТАКТНАЯ ИНФОРМАЦИЯ</legend>
+			<p>Имя<span style="color:red";>*</span></p><input type="text"><br>
+
+			<p>Телефон</p><input type="number"><br>
+
+			<p>Email<span style="color:red";>*</span></p><input type="email"><br>
+		</fieldset>
+	</form>
+
+	<form>
+		<fieldset class="block-2">
+			<legend style="font-weight: 600;">ПЕРСОНАЛЬНАЯ ИНФОРМАЦИЯ</legend>
+			<p>Возраст<span style="color:red";>*</span></p><input type="number"><br>
+
+			<p>Пол</p>
+			<select class="gender">
+				<option value="woman">Женщина</option>
+				<option value="man">Мужчина</option>
+			</select><br>
+			
+			<p>Перечислите личные качества</p>
+			<textarea class="text" rows="5" cols="20" maxlength="20"></textarea>
+		</fieldset>
+		
+	</form>
+
+	<form>
+		<fieldset class="block-2">
+			<legend style="font-weight: 600;">ВЫБЕРИТЕ ВАШИХ ЛЮБИМЫХ ЖИВОТНЫХ</legend>
+			<label>
+				<input class="checkbox" type="checkbox" value="option1">Зебра
+				<input class="checkbox" type="checkbox" value="option2">Кошак
+				<input class="checkbox" type="checkbox" value="option3">Анаконда
+				<input class="checkbox" type="checkbox" value="option4" checked="">Человек
+				<br>
+				<input class="checkbox" type="checkbox" value="option5">Слон
+				<input class="checkbox" type="checkbox" value="option7">Голубь
+				<input class="checkbox" type="checkbox" value="option6">Антилопа
+				<input class="checkbox" type="checkbox" value="option8">Краб
+			</label>
+		</fieldset>
+	</form>
+	<button>Отправить информацию</button>
+</body>
+
+</html>
